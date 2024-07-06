@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fr"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/fr" />
+
+    <ImageButton
+        android:id="@+id/Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nn"
+        android:contentDescription="@string/Play"
+        android:translationX="260dp"
+        android:translationY="100dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="210dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/bTint"
+        android:fontFamily="sans-serif-medium"
+        android:shadowRadius="12"
+        android:text="High Score: 0"
+        android:textSize="24sp"
+        android:translationX="310dp"
+        android:translationY="220dp"
+        app:strokeColor="@color/bST"
+        app:strokeWidth="5dp" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="182dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/bTint"
+        android:text="@string/Exit"
+        android:textSize="24sp"
+        android:translationX="320dp"
+        android:translationY="300dp"
+        app:strokeColor="@color/bST"
+        app:strokeWidth="5dp" />
+
+</RelativeLayout>
